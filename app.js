@@ -79,7 +79,9 @@ const exibirPokemon = async (input) => {
 }
 
 const pesquisarPokemon = () => {
-    exibirPokemon(input.value);
+
+    const pokemonMinusculo = input.value.toLowerCase();
+    exibirPokemon(pokemonMinusculo);
     preventDefault();
 }
 
